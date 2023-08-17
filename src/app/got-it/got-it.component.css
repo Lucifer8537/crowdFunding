@@ -1,0 +1,44 @@
+.thanks-container {
+  display: grid;
+  padding: 5%;
+}
+.check-container {
+  display: flex;
+  justify-content: center;
+}
+.check {
+}
+.thanks-heading {
+  text-align: center;
+  font-family: "Commissioner";
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 30px;
+
+  margin-bottom: 15px;
+}
+.thanks-content {
+  text-align: center;
+  color: hsl(0, 0%, 48%);
+  font-family: "Commissioner";
+}
+.got-it-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.got-it {
+  font-family: "Commissioner";
+  color: white;
+  border: 0;
+  outline: 0;
+  background-color: hsl(176, 50%, 47%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.got-it:hover {
+  background-color: hsl(176, 72%, 28%);
+}

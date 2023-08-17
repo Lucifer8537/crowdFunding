@@ -1,0 +1,262 @@
+<div class="back-this-project-container">
+  <div class="close" *ngIf="!mobileView">
+    <img
+      src="../../assets/icon-close-modal.svg"
+      alt="icon-close-modal"
+      class="close-icon"
+      mat-dialog-close
+    />
+  </div>
+  <div class="project-content">
+    <div class="heading-container">
+      <div class="project-heading">Back this project</div>
+      <div class="close" *ngIf="mobileView">
+        <img
+          src="../../assets/icon-close-modal.svg"
+          alt="icon-close-modal"
+          class="close-icon"
+          mat-dialog-close
+        />
+      </div>
+    </div>
+
+    <div class="project-question">
+      Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the
+      world?
+    </div>
+    <div class="pledge-container">
+      <mat-radio-group [(ngModel)]="pledge" (ngModelChange)="onChange($event)">
+        <div
+          class="radio-container"
+          [ngStyle]="{
+            'border-color': noBool
+              ? 'hsl(176, 50%, 47%)'
+              : 'hsl(0, 0%, 48%, 0.3)'
+          }"
+        >
+          <mat-radio-button class="pledge" value="no-reward">
+            <div class="pledge-offer">
+              <div class="pledge-header">
+                <div class="heading-left">
+                  <div class="pledge-heading pledge-heading-hover">
+                    Pledge with no reward
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="!mobileView" class="pledge-content">
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to recieve
+                product updates via email.
+              </div>
+            </div>
+          </mat-radio-button>
+          <div *ngIf="mobileView" class="pledge-content">
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to recieve product
+            updates via email.
+          </div>
+          <ng-container *ngIf="noBool">
+            <div class="enter-pledge-container">
+              <div class="enter-pledge">Enter your pledge</div>
+              <div class="input-btn">
+                <span class="dollar-sign">$</span>
+                <input
+                  class="input-25"
+                  [(ngModel)]="norewardpledge"
+                  (ngModelChange)="onChangePledge($event)"
+                  type="number"
+                  name="noreward"
+                /><button
+                  [ngStyle]="{ opacity: norewardValid ? 1 : 0.5 }"
+                  [disabled]="!norewardValid"
+                  class="continue"
+                  (click)="onClickContinue()"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+        <div
+          class="radio-container"
+          [ngStyle]="{
+            'border-color': bambooBool
+              ? 'hsl(176, 50%, 47%)'
+              : 'hsl(0, 0%, 48%, 0.3)'
+          }"
+        >
+          <mat-radio-button class="pledge" value="bamboo-stand">
+            <div class="pledge-offer">
+              <div class="pledge-header">
+                <div class="heading-left">
+                  <div class="pledge-heading pledge-heading-hover">
+                    Bamboo Stand
+                  </div>
+                  <div class="minimum-pledge">Pledge $25 or more</div>
+                </div>
+                <div class="amount-left" *ngIf="!mobileView">
+                  <div class="amount">101</div>
+                  <div class="left">left</div>
+                </div>
+              </div>
+              <div *ngIf="!mobileView" class="pledge-content">
+                You get an ergonomic stand made of natural bamboo. You've helped
+                is launch our promotional campaign, and you'll be added to a
+                special Backer member list.
+              </div>
+            </div>
+          </mat-radio-button>
+          <div *ngIf="mobileView" class="pledge-content">
+            You get an ergonomic stand made of natural bamboo. You've helped is
+            launch our promotional campaign, and you'll be added to a special
+            Backer member list.
+          </div>
+          <div class="amount-left" *ngIf="mobileView">
+            <div class="amount">101</div>
+            <div class="left">left</div>
+          </div>
+          <ng-container *ngIf="bambooBool"
+            ><div class="enter-pledge-container">
+              <div class="enter-pledge">Enter your pledge</div>
+              <div class="input-btn">
+                <span class="dollar-sign">$</span>
+                <input
+                  class="input-25"
+                  name="25dollar"
+                  [(ngModel)]="bambooStand"
+                  (ngModelChange)="onChangePledge($event)"
+                  type="number"
+                /><button
+                  [ngStyle]="{ opacity: bambooValid ? 1 : 0.5 }"
+                  [disabled]="!bambooValid"
+                  class="continue"
+                  (click)="onClickContinue()"
+                >
+                  Continue
+                </button>
+              </div>
+            </div></ng-container
+          >
+        </div>
+        <div
+          class="radio-container"
+          [ngStyle]="{
+            'border-color': blackBool
+              ? 'hsl(176, 50%, 47%)'
+              : 'hsl(0, 0%, 48%, 0.3)'
+          }"
+        >
+          <mat-radio-button class="pledge" value="black-edition-stand">
+            <div class="pledge-offer">
+              <div class="pledge-header">
+                <div class="heading-left">
+                  <div class="pledge-heading pledge-heading-hover">
+                    Black Edition Stand
+                  </div>
+                  <div class="minimum-pledge">Pledge $75 or more</div>
+                </div>
+                <div class="amount-left" *ngIf="!mobileView">
+                  <div class="amount">64</div>
+                  <div class="left">left</div>
+                </div>
+              </div>
+              <div *ngIf="!mobileView" class="pledge-content">
+                You get a Black Special Edition computer stand and a personal
+                thank you. You'll be added to our Backer member list. Shipping
+                is included.
+              </div>
+            </div>
+          </mat-radio-button>
+          <div *ngIf="mobileView" class="pledge-content">
+            You get a Black Special Edition computer stand and a personal thank
+            you. You'll be added to our Backer member list. Shipping is
+            included.
+          </div>
+          <div class="amount-left" *ngIf="mobileView">
+            <div class="amount">64</div>
+            <div class="left">left</div>
+          </div>
+          <ng-container *ngIf="blackBool"
+            ><div class="enter-pledge-container">
+              <div class="enter-pledge">Enter your pledge</div>
+              <div class="input-btn">
+                <span class="dollar-sign">$</span>
+                <input
+                  class="input-25"
+                  name="75dollar"
+                  type="number"
+                  [(ngModel)]="blackEditionStand"
+                  (ngModelChange)="onChangePledge($event)"
+                /><button
+                  [ngStyle]="{ opacity: blackValid ? 1 : 0.5 }"
+                  [disabled]="!blackValid"
+                  class="continue"
+                  (click)="onClickContinue()"
+                >
+                  Continue
+                </button>
+              </div>
+            </div></ng-container
+          >
+        </div>
+        <div class="radio-container">
+          <mat-radio-button
+            [disabled]="true"
+            class="pledge"
+            [ngStyle]="{ opacity: '0.4' }"
+            value="mahogany-special-edition"
+          >
+            <div class="pledge-offer">
+              <div class="pledge-header">
+                <div class="heading-left">
+                  <div class="pledge-heading">Mahogany Special Edition</div>
+                  <div class="minimum-pledge">Pledge $200 or more</div>
+                </div>
+                <div class="amount-left" *ngIf="!mobileView">
+                  <div class="amount">0</div>
+                  <div class="left">left</div>
+                </div>
+              </div>
+              <div *ngIf="!mobileView" class="pledge-content">
+                You get tow Special Edition Mahogany stands, a Backer T-shirt,
+                and a personal thank you. You'll be added to our Backer member
+                list. Shipping is included.
+              </div>
+            </div>
+          </mat-radio-button>
+          <div
+            [ngStyle]="{ opacity: '0.4' }"
+            *ngIf="mobileView"
+            class="pledge-content"
+          >
+            You get tow Special Edition Mahogany stands, a Backer T-shirt, and a
+            personal thank you. You'll be added to our Backer member list.
+            Shipping is included.
+          </div>
+          <div
+            [ngStyle]="{ opacity: '0.4' }"
+            class="amount-left"
+            *ngIf="mobileView"
+          >
+            <div class="amount">0</div>
+            <div class="left">left</div>
+          </div>
+          <ng-container *ngIf="false">
+            <div class="enter-pledge-container">
+              <div class="enter-pledge">Enter your pledge</div>
+              <div class="input-btn">
+                <span class="dollar-sign">$</span>
+                <input class="input-25" type="number" min="25" /><button
+                  class="continue"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </mat-radio-group>
+    </div>
+  </div>
+</div>

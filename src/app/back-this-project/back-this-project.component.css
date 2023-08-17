@@ -1,0 +1,182 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.select {
+  border: 1px solid hsl(176, 50%, 47%);
+}
+@media (min-width: 679px) {
+  .back-this-project-container {
+    padding: 4% 4% 4% 4%;
+    display: grid;
+    height: 600px;
+    overflow-y: auto;
+  }
+  .close {
+    justify-content: end;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .close-icon {
+    cursor: pointer;
+  }
+  .project-content {
+    font-family: "Commissioner";
+    display: grid;
+  }
+  .project-heading {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .project-question {
+    color: hsl(0, 0%, 48%);
+    font-size: 15px;
+  }
+  .pledge-container {
+    margin-top: 30px;
+    display: grid;
+  }
+  .pledge {
+  }
+  ::ng-deep .mdc-form-field {
+    padding: 30px 25px 30px 25px;
+    align-items: normal !important;
+  }
+
+  ::ng-deep .mat-mdc-radio-button .mdc-radio {
+    padding: 0 !important;
+    color: hsl(176, 50%, 47%) !important;
+  }
+
+  ::ng-deep
+    .mat-mdc-radio-button
+    .mdc-radio
+    .mdc-radio__native-control:enabled:checked
+    + .mdc-radio__background
+    .mdc-radio__outer-circle {
+    border-color: hsl(176, 50%, 47%) !important;
+  }
+
+  ::ng-deep
+    .mat-mdc-radio-button
+    .mdc-radio
+    .mdc-radio__native-control:enabled
+    + .mdc-radio__background
+    .mdc-radio__inner-circle {
+    border-color: hsl(176, 50%, 47%) !important;
+  }
+
+  ::ng-deep .mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-focus-icon-color: hsl(176, 50%, 47%) !important;
+    --mdc-radio-selected-hover-icon-color: hsl(176, 50%, 47%) !important;
+    --mdc-radio-selected-icon-color: hsl(176, 50%, 47%) !important;
+    --mdc-radio-selected-pressed-icon-color: hsl(176, 50%, 47%) !important;
+    --mat-radio-checked-ripple-color: hsl(176, 50%, 47%) !important;
+  }
+
+  .pledge-offer {
+    display: grid;
+    padding-left: 10px;
+  }
+  .pledge-header {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    font-family: "Commissioner";
+  }
+  .heading-left {
+    display: flex;
+  }
+  .pledge-heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .minimum-pledge {
+    color: hsl(176, 50%, 47%);
+    font-weight: 600;
+  }
+  .amount-left {
+    display: flex;
+  }
+  .amount {
+    font-weight: 800;
+    padding-right: 5px;
+  }
+  .left {
+    color: hsl(0, 0%, 48%);
+  }
+  .pledge-content {
+    color: hsl(0, 0%, 48%);
+    font-size: 15px;
+  }
+  .radio-container {
+    border: 2px solid hsl(0, 0%, 48%, 0.3);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .enter-pledge-container {
+    border-top: 1px solid hsl(0, 0%, 48%, 0.3);
+    padding: 20px 25px 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Commissioner";
+    color: hsl(0, 0%, 48%);
+    align-items: center;
+  }
+  .enter-pledge {
+  }
+  .input-btn {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .input-25 {
+    width: 25px;
+    height: 30px;
+    border-radius: 30px;
+    outline: 0;
+    border: 2px solid hsl(0, 0%, 48%, 0.3);
+    margin-right: 10px;
+    text-align: right;
+    padding: 0px 15px 0px 20px;
+    font-family: "Commissioner";
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .input-25:focus,
+  .input-25:hover {
+    border: 2px solid hsl(176, 50%, 47%);
+  }
+
+  .dollar-sign {
+    font-family: "Commissioner";
+    color: hsl(0, 0%, 48%, 0.4);
+    margin-left: 10px;
+    position: absolute;
+  }
+  .continue {
+    font-family: "Commissioner";
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    border: 0;
+    outline: 0;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .continue:hover {
+    background-color: hsl(176, 72%, 28%);
+  }
+  .pledge-heading-hover:hover {
+    color: hsl(176, 50%, 47%);
+  }
+}

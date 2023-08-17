@@ -1,0 +1,166 @@
+@media (max-width: 679px) {
+  .back-this-project-container {
+    padding: 4% 4% 4% 4%;
+    display: grid;
+    height: 80vh;
+    overflow-y: auto;
+  }
+  .heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  .close {
+    align-items: center;
+  }
+  .project-content {
+    font-family: "Commissioner";
+    display: grid;
+  }
+  .project-heading {
+    font-size: 120%;
+    font-weight: 700;
+  }
+  .project-question {
+    color: hsl(0, 0%, 48%);
+    font-size: 90%;
+  }
+  .pledge-container {
+    margin-top: 10%;
+    display: grid;
+  }
+  ::ng-deep .mdc-form-field {
+    padding: 10% 0% 0% 10%;
+    align-items: normal !important;
+  }
+
+  ::ng-deep .mat-mdc-radio-button .mdc-radio {
+    padding: 0 !important;
+    color: hsl(176, 50%, 47%) !important;
+  }
+
+  ::ng-deep
+    .mat-mdc-radio-button
+    .mdc-radio
+    .mdc-radio__native-control:enabled:checked
+    + .mdc-radio__background
+    .mdc-radio__outer-circle {
+    border-color: hsl(176, 50%, 47%) !important;
+  }
+
+  ::ng-deep
+    .mat-mdc-radio-button
+    .mdc-radio
+    .mdc-radio__native-control:enabled
+    + .mdc-radio__background
+    .mdc-radio__inner-circle {
+    border-color: hsl(176, 50%, 47%) !important;
+  }
+
+  ::ng-deep .mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-focus-icon-color: hsl(176, 50%, 47%) !important;
+    --mdc-radio-selected-hover-icon-color: hsl(176, 50%, 47%) !important;
+    --mdc-radio-selected-icon-color: hsl(176, 50%, 47%) !important;
+    --mdc-radio-selected-pressed-icon-color: hsl(176, 50%, 47%) !important;
+    --mat-radio-checked-ripple-color: hsl(176, 50%, 47%) !important;
+  }
+  .pledge-offer {
+    display: grid;
+    padding-left: 5%;
+    width: 100%;
+  }
+  .pledge-header {
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: space-between;
+    font-family: "Commissioner";
+  }
+  .heading-left {
+    display: grid;
+  }
+  .pledge-heading {
+    font-size: 100%;
+    font-weight: 800;
+  }
+  .minimum-pledge {
+    color: hsl(176, 50%, 47%);
+    font-weight: 600;
+  }
+  .pledge-content {
+    color: hsl(0, 0%, 48%);
+    font-size: 90%;
+    padding: 5% 10% 5% 10%;
+  }
+  .amount-left {
+    display: flex;
+    width: 80%;
+    padding: 0% 10%;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .amount {
+    font-weight: 800;
+    padding-right: 3%;
+    font-size: 120%;
+  }
+  .left {
+    color: hsl(0, 0%, 48%);
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+  }
+  .radio-container {
+    border: 2px solid hsl(0, 0%, 48%, 0.3);
+    border-radius: 5px;
+    margin-bottom: 10%;
+  }
+  .enter-pledge-container {
+    border-top: 1px solid hsl(0, 0%, 48%, 0.3);
+    padding: 10%;
+    display: grid;
+    font-family: "Commissioner";
+    color: hsl(0, 0%, 48%);
+  }
+  .enter-pledge {
+    text-align: center;
+    font-size: 90%;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+  .input-btn {
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    width: 100%;
+    justify-content: space-between;
+  }
+  .input-25 {
+    width: 14%;
+    height: 80%;
+    border-radius: 30px;
+    outline: 0;
+    border: 2px solid hsl(0, 0%, 48%, 0.3);
+    text-align: right;
+    padding: 1% 10%;
+    font-family: "Commissioner";
+    font-weight: 600;
+  }
+  .dollar-sign {
+    font-family: "Commissioner";
+    color: hsl(0, 0%, 48%, 0.4);
+    position: absolute;
+    left: 5%;
+  }
+  .continue {
+    font-family: "Commissioner";
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    border: 0;
+    outline: 0;
+    padding: 5% 10%;
+    border-radius: 20px;
+    font-size: 100%;
+  }
+}
